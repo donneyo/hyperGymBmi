@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #313131;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3e3e3e;
+  border-radius: 10px;
+}
+
+/* Style for toggle dark and white button */
+:root {
+  --bg-color: #171717;
+  --text-color: #fff;
+  --secondary-bg-color: #1d1d1d;
+}
+
+[data-theme="light"] {
+  --bg-color: #fff;
+  --text-color: #000;
+  --secondary-bg-color: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.bg-black/20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bg-black/80 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure text color is based on theme */
+.text-theme {
+  color: var(--text-color);
+}
+
+.bg-theme {
+  background-color: var(--bg-color);
+}
+
+.secondary-bg-theme {
+  background-color: var(--secondary-bg-color);
+}
